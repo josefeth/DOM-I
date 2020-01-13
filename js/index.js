@@ -54,4 +54,12 @@ for (var i = 0; i < nav.length; i++) {
   nav[i].style.color = "blue";
 }
 
-//CTA
+const h1Text = document.querySelector('.cta-text h1')
+h1Text.innerText = siteContent.cta.h1
+
+const topButton = document.querySelector('.cta-text button')
+topButton.innerText = siteContent.cta.button
+
+const topImg = document.getElementById("cta-img");
+logo.setAttribute("src", siteContent["cta"]["img-src"]);
+
